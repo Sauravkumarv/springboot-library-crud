@@ -51,4 +51,16 @@ public class BookService {
         book.setId(id);
         return book;
     }
+    
+    public void deleteBook(Long id) {
+        String sql = "DELETE FROM books WHERE id = ?";
+        int rows = jdbcTemplate.update(sql, id);
+        if (rows == 0) {
+            throw new IllegalArgumentException("Book with ID " + id + " not found");
+        }
+    }
+
+    public List<Book> recommendBooksByGenre(String genre) {
+        return jdbcTemplate.query("SELECT * FROM books WHERE genre = ? ORDER BY publication_year DESC LIMIT 3", bookRowMapper, genre);
+    }
 }

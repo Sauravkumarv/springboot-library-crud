@@ -40,6 +40,21 @@ public class BookController {
             return ResponseEntity.notFound().build();
         }
     }
+    
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
+        try {
+            bookService.deleteBook(id);
+            return ResponseEntity.noContent().build();
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @GetMapping("/recommend/{genre}")
+    public List<Book> recommendBooks(@PathVariable String genre) {
+        return bookService.recommendBooksByGenre(genre);
+    }
 	
 }
 
