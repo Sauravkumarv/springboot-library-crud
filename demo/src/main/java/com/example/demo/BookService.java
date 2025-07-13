@@ -34,4 +34,21 @@ public class BookService {
         List<Book> books = jdbcTemplate.query("SELECT * FROM books WHERE id = ?", bookRowMapper, id);
         return books.isEmpty() ? null : books.get(0);
     }
+	public Book addBook(Book book) {
+        String sql = "INSERT INTO books (title, author, genre, publication_year) VALUES (?, ?, ?, ?)";
+        jdbcTemplate.update(sql, book.getTitle(), book.getAuthor(), book.getGenre(), book.getPublication_year());
+        Long newId = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Long.class);
+        book.setId(newId);
+        return book;
+    }
+
+    public Book updateBook(Long id, Book book) {
+        String sql = "UPDATE books SET title = ?, author = ?, genre = ?, publication_year = ? WHERE id = ?";
+        int rows = jdbcTemplate.update(sql, book.getTitle(), book.getAuthor(), book.getGenre(), book.getPublication_year(), id);
+        if (rows == 0) {
+            throw new IllegalArgumentException("Book with ID " + id + " not found");
+        }
+        book.setId(id);
+        return book;
+    }
 }
