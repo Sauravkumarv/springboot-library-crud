@@ -33,7 +33,7 @@ Typical folders and their purposes within this module:
 
 ### Running the Application
 
-1. **Clone the repository:**
+1. **Clone the repository:-**
 
    ```bash
    git clone https://github.com/Sauravkumarv/springboot-library-crud.git
