@@ -4,7 +4,7 @@ This directory contains the source code for the **demo** module of the [Spring B
 
 ## Overview
 
-The **demo** module demonstrates a simple CRUD (Create, Read, Update, Delete) application for managing a library system using Spring Boot. It includes all the essential components, such as entities, repositories, services, and controllers, required to perform CRUD operations on library records.
+The **demo**  module demonstrates a simple CRUD (Create, Read, Update, Delete) application for managing a library system using Spring Boot. It includes all the essential components, such as entities, repositories, services, and controllers, required to perform CRUD operations on library records.
 
 ## Structure
 
