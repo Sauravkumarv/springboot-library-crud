@@ -1,8 +1,8 @@
 # Spring Boot Library CRUD - Demo Module
 
-This directory contains the source code for the **demo** module of the [Spring Boot Library CRUD](https://github.com/Sauravkumarv/springboot-library-crud) project.
+This directory contains the source code for the  **demo** module of the [Spring Boot Library CRUD](https://github.com/Sauravkumarv/springboot-library-crud) project.
 
-## Overview
+##  Overview
 
 The **demo**  module demonstrates a simple CRUD (Create, Read, Update, Delete) application for managing a library system using Spring Boot. It includes all the essential components, such as entities, repositories, services, and controllers, required to perform CRUD operations on library records.
 
