@@ -31,7 +31,7 @@ Typical folders and their purposes within this module:
 - Java 8 or higher
 - Maven
 
-### Running  the Application
+### Running the Application
 
 1. **Clone the repository:-**
 
