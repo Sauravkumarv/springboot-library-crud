@@ -24,7 +24,7 @@ Typical folders and their purposes within this module:
 - Delete books from the library.
 - Uses Spring Boot, Spring Data JPA, and H2 (in-memory) or another database.
 
-## Getting Started
+## Getting        Started
 
 ### Prerequisites
 
