@@ -1,6 +1,6 @@
 # Spring Boot Library CRUD -: Demo Module
 
-This directory contains the source code for the  **demo** module of the [Spring Boot Library CRUD](https://github.com/Sauravkumarv/springboot-library-crud) project.
+This directory contains the source code for the    **demo**   module of the [Spring Boot Library CRUD](https://github.com/Sauravkumarv/springboot-library-crud) project.
 
 ##  Overview
 
