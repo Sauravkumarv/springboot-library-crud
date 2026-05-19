@@ -59,7 +59,7 @@ Typical folders and their purposes within this module:
 
 ## Example Endpoints
 
-- `GET /books` — List all books
+- `GET /books` —      List all books
 - `GET /books/{id}` — Get a book by ID
 - `POST /books` — Create a new book
 - `PUT /books/{id}` — Update an existing book
